@@ -91,6 +91,7 @@
     <!-- Challenge 5:  -->
 
     <?php 
+        echo "Write a PHP script to check if a given year is a leap year or not";
         $year = 2024;
 
         if (($year % 400 == 0) || ($year % 4 == 0 && $year % 100 != 0)) {
