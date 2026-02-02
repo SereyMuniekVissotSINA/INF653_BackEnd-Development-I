@@ -11,6 +11,21 @@
     
     <?php $name = 'Paul';
      echo "<h1 >Hello $name</h1>", "<h1> Do you want to juk tnam? </h1>";
-     echo "<pre><h2>Jg dek</h2></pre>" ?>
+     echo "<pre><h2>Jg dek</h2></pre>";  
+     $a='10';
+     $b='20';
+     
+     echo $a + $b;
+     
+     if ($a == $b) {
+        echo "<h3> A Equal B</h3>";
+     } else {
+        echo "<h3>A Not Equal B</h3>";
+     }
+     
+     ?>
+
+   
+
 </body>
 </html>
