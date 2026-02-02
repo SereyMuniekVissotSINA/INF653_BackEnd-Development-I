@@ -88,7 +88,7 @@
             echo "You got an F! <br>";
         }
     ?>
-    <!-- Challenge 5:  -->
+    <!-- Challenge 5: Write a PHP script to check if a given year is a leap year or not -->
 
     <?php 
         echo "Write a PHP script to check if a given year is a leap year or not";
