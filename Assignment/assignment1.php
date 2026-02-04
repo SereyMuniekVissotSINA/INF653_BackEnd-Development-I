@@ -35,14 +35,14 @@
 
      <?php 
 
-        echo "challenge 2: Write a PHP script that takes an integer and determines if it even or odd using 
+        echo "Challenge 2: Write a PHP script that takes an integer and determines if it even or odd using 
             the modulus % operator <br><br>";
         $num = 7;
 
         if ($num % 2 == 0){
-            echo $num . " is an even number.<br>";
+            echo $num . " is an even number.<br><br>";
         } else {
-            echo $num . " is an odd number.<br>";
+            echo $num . " is an odd number.<br><br>";
         }
      ?>
 
@@ -55,9 +55,9 @@
             and -- operator <br><br>";
         $num = 10;
 
-        echo "Staring number is " . $num . "<br>";
-        echo "After increment " . ++$num . "<br>";
-        echo "After decrement " . --$num . "<br>";
+        echo "Staring number is " . $num . "<br><br>";
+        echo "After increment " . ++$num . "<br><br>";
+        echo "After decrement " . --$num . "<br><br>";
      ?>
 
     <!-- Challenge 4: Write a PHP script that takes a student's marks and assigns a grade using the following conditions:
@@ -73,25 +73,25 @@
         80 -89 -> B
         70 - 79 -> C
         60 - 69 -> D
-        Below 60 -> F <br>";
+        Below 60 -> F <br><br>";
         $num = 85;
 
         if ($num >= 90) {
-            echo "You got an A! <br>";
+            echo "You got an A! <br><br>";
         } else if ($num >= 80 && $num < 90) {
-            echo "You got a B! <br>";
+            echo "You got a B! <br><br>";
         } else if ($num >= 70 && $num < 80) {
-            echo "You got a C! <br>";
+            echo "You got a C! <br><br>";
         } else if ($num >= 60 && $num < 70) {
-            echo "You got a D! <br>";
+            echo "You got a D! <br><br>";
         } else {
-            echo "You got an F! <br>";
+            echo "You got an F! <br><br>";
         }
     ?>
     <!-- Challenge 5: Write a PHP script to check if a given year is a leap year or not -->
 
     <?php 
-        echo "Write a PHP script to check if a given year is a leap year or not";
+        echo "Write a PHP script to check if a given year is a leap year or not <br><br>";
         $year = 2024;
 
         if (($year % 400 == 0) || ($year % 4 == 0 && $year % 100 != 0)) {
