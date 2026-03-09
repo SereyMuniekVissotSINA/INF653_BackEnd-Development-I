@@ -17,7 +17,13 @@ include("view/header.php");
                 </div>
                 <div class="list__removed">
 
-                    <form action="." method="post">
+                    <form action="." method="post" style="display:inline;">
+                        <input type="hidden" name="action" value="show_update_course">
+                        <input type="hidden" name="course_id" value="<?= $course['courseID'] ?>">
+                        <button class="edit-button">Edit</button>
+                    </form>
+
+                    <form action="." method="post" style="display:inline;">
                         <input type="hidden" name="action" value="delete_course">
                         <input type="hidden" name="course_id" value="<?= $course['courseID'] ?>">
                         <button class="remove-button" onclick="return confirm('Are you sure you want to delete this course?')">X</button>

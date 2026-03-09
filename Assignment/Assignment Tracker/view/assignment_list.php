@@ -22,7 +22,12 @@ include('view/header.php');
             <div class="assignment-item">
                 <p><strong><?= htmlspecialchars($assignment['courseName']) ?></strong></p>
                 <p><?= htmlspecialchars($assignment['Description']) ?></p>
-                <form action="." method="post">
+                <form action="." method="post" style="display:inline;">
+                    <input type="hidden" name="action" value="show_update_assignment">
+                    <input type="hidden" name="assignment_id" value="<?= $assignment['ID'] ?>">
+                    <button type="submit" class="edit-button">Edit</button>
+                </form>
+                <form action="." method="post" style="display:inline;">
                     <input type="hidden" name="action" value="delete_assignment">
                     <input type="hidden" name="assignment_id" value="<?= $assignment['ID'] ?>">
                     <button type="submit" class="remove-button" onclick="return confirm('Are you sure you want to delete this assignment?')">X</button>
