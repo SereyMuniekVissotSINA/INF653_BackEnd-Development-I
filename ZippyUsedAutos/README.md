@@ -105,7 +105,7 @@ A modern PHP-based car dealership management system with public browsing and adm
      - `$host` - Database host (default: localhost)
      - `$username` - Database username (default: root)
      - `$password` - Database password (default: empty)
-     - `$dbname` - Database name (default: zippy_autos)
+     - `$dbname` - Database name (default: zippyautos)
 
 5. **Access the application**
    - Public: `http://localhost/ZippyUsedAutos/`
