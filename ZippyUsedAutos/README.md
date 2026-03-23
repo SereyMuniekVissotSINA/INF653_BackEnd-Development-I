@@ -59,7 +59,7 @@ A modern PHP-based car dealership management system with public browsing and adm
 
 1. **Clone/Download the project**
    ```
-   Extract to: c:\xampp\htdocs\Zippy Used Autos\
+   Extract to: c:\xampp\htdocs\ZippyUsedAutos\
    ```
 
 2. **Create the database**
