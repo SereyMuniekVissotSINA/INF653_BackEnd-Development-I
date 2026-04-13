@@ -1,9 +1,0 @@
-node_modules/
-.DS_Store
-.env
-.env.local
-*.log
-logs/errorLog.txt
-logs/requests.txt
-.vscode/
-.idea/
