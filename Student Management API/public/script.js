@@ -115,10 +115,13 @@ async function handleFormSubmit(e) {
     let response;
     if (isEditing) {
       const id = studentIdInput.value;
-      response = await fetch(`${API_URL}/${id}`, {
+      response = await fetch(`${API_URL}`, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(studentData),
+        body: JSON.stringify({
+          _id: id,
+          ...studentData,
+        }),
       });
 
       if (!response.ok) throw new Error('Failed to update student');
@@ -176,8 +179,10 @@ async function deleteStudent(id) {
   if (!confirm('Are you sure you want to delete this student?')) return;
 
   try {
-    const response = await fetch(`${API_URL}/${id}`, {
+    const response = await fetch(`${API_URL}`, {
       method: 'DELETE',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ _id: id }),
     });
 
     if (!response.ok) throw new Error('Failed to delete student');

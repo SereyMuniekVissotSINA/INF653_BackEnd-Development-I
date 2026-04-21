@@ -90,8 +90,11 @@ exports.createStudent = async (req, res) => {
 // Update an existing student
 exports.updateStudent = async (req, res) => {
   try {
-    const { id } = req.params;
-    const { firstName, lastName, email, course, enrolledDate } = req.body;
+    const { _id, firstName, lastName, email, course, enrolledDate } = req.body;
+    const id = _id;
+
+    console.log('PUT request received - ID:', id);
+    console.log('Request body:', req.body);
 
     // Check if student exists
     let student = await Student.findById(id);
@@ -137,7 +140,11 @@ exports.updateStudent = async (req, res) => {
 // Delete a student
 exports.deleteStudent = async (req, res) => {
   try {
-    const { id } = req.params;
+    const { _id } = req.body;
+    const id = _id;
+
+    console.log('DELETE request received - ID:', id);
+    console.log('Request body:', req.body);
 
     const student = await Student.findByIdAndDelete(id);
 
